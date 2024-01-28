@@ -1,0 +1,31 @@
+.clientpane{
+    -fx-background-color: linear-gradient( to bottom ,lightblue,rgb(162, 155, 254) 50%, rgb(131, 156, 224) 100% , rgba(241, 221, 160,1) 100%);
+}
+.serverpane{
+    -fx-background-color: linear-gradient( to bottom, lightblue,rgb(162, 155, 254) 50%, rgb(131, 156, 224) 100% , rgba(241, 221, 160,1) 100%);
+}
+
+.loginpane{
+    -fx-background-color: linear-gradient( to top ,lightblue,rgb(162, 155, 254) 50%, rgb(131, 156, 224) 100% , rgba(241, 221, 160,1) 100%);
+    -fx-background-image: url("");
+}
+.interPane{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+.button{
+    -fx-background-color: linear-gradient( to bottom , rgb(155, 205, 254) 50%, rgb(115, 144, 217) 100% , rgb(131, 156, 224) 100%);;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-font: 14px "Arial" bold;
+    -fx-text-fill: Black,bold;
+    -fx-border-color: linear-gradient(to bottom, #00418b, #2f0080);
+}
+
+.circle{
+    -fx-background-color: #9bafea;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
