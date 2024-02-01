@@ -113,7 +113,7 @@ public class ClientController implements Initializable {
             });
             TextFlow textFlow = new TextFlow();
             textFlow.getChildren().add(imageView);
-            textFlow.setStyle("-fx-background-color:  #005C4B; -fx-background-radius: 10 10 0 10");
+            textFlow.setStyle("-fx-background-color:  #839ce0; -fx-background-radius: 10 10 0 10");
             HBox vBox = new HBox(10);
             vBox.setAlignment(Pos.BOTTOM_RIGHT);
 
@@ -160,7 +160,7 @@ public class ClientController implements Initializable {
             text.setStyle("-fx-fill: white;");
             TextFlow textFlow = new TextFlow();
             textFlow.getChildren().add(text);
-            textFlow.setStyle("-fx-background-color:  #005C4B; -fx-background-radius: 10 10 0 10; -fx-font-style: white;");
+            textFlow.setStyle("-fx-background-color:  #8573d9; -fx-background-radius: 10 10 0 10; -fx-font-style: white;");
             textFlow.setPadding(new Insets(2,10,2,10));
 
             HBox vBox = new HBox(10);
@@ -265,7 +265,7 @@ public class ClientController implements Initializable {
                             vBox.getChildren().add(imageView);
                             TextFlow textFlow2 = new TextFlow();
                             textFlow2.getChildren().add(vBox);
-                            textFlow2.setStyle("-fx-background-color:  black; -fx-background-radius: 0 10 10 10; -fx-font-style: white;");
+                            textFlow2.setStyle("-fx-background-color:  #637cc0; -fx-background-radius: 0 10 10 10; -fx-font-style: white;");
                             textFlow2.setPadding(new Insets(2,10,2,10));
 
                             hBox.getChildren().addAll(textFlow,textFlow2);
@@ -292,7 +292,7 @@ public class ClientController implements Initializable {
                             emojiText.setStyle("-fx-font-size: 23px; -fx-fill: #FAD22D; -fx-border-width: 10");
                             textFlow1.getChildren().add(emojiText);
                             textFlow2.getChildren().addAll(text,emojiText);
-                            textFlow2.setStyle("-fx-background-color:  black; -fx-background-radius: 0 10 10 10; -fx-font-style: white;");
+                            textFlow2.setStyle("-fx-background-color:  #637cc0; -fx-background-radius: 0 10 10 10; -fx-font-style: white;");
                             textFlow2.setPadding(new Insets(2,10,2,10));
 
                             HBox hBox = new HBox();
@@ -316,7 +316,7 @@ public class ClientController implements Initializable {
 
                             HBox hBox = new HBox(10);
                             hBox.getChildren().add(textFlow);
-                            textFlow.setStyle("-fx-background-color:  black; -fx-background-radius: 0 10 10 10; -fx-fill: white;");
+                            textFlow.setStyle("-fx-background-color:  #637cc0; -fx-background-radius: 0 10 10 10; -fx-fill: white;");
 
                             textFlow.setPadding(new Insets(2,10,2,10));
 
@@ -433,7 +433,7 @@ public class ClientController implements Initializable {
 
         TextFlow textFlow = new TextFlow();
         textFlow.getChildren().add(emojiText);
-        textFlow.setStyle("-fx-background-color:  #005C4B; -fx-background-radius: 10 10 0 10");
+        textFlow.setStyle("-fx-background-color:  #7390d9; -fx-background-radius: 10 10 0 10");
         textFlow.setPadding(new Insets(2,10,2,10));
         HBox vBox= new HBox(10);
         vBox.setAlignment(Pos.BOTTOM_RIGHT);

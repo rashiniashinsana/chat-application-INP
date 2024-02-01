@@ -14,8 +14,15 @@
 
 <AnchorPane prefHeight="446.0" prefWidth="687.0" style="-fx-background-color: #202C33;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.ClientController">
     <children>
-      <Pane prefHeight="446.0" prefWidth="687.0" styleClass="clientpane" stylesheets="@../css/style.css" />
-        <AnchorPane fx:id="msgPane" layoutX="51.0" layoutY="22.0" style="-fx-background-color: #9bafea;" visible="false">
+      <Pane prefHeight="446.0" prefWidth="687.0" styleClass="clientpane" stylesheets="@../css/style.css">
+         <children>
+            <Label layoutX="213.0" layoutY="40.0" prefHeight="88.0" prefWidth="247.0" text="Play Tech" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </Label>
+         </children></Pane>
+        <AnchorPane fx:id="msgPane" layoutX="51.0" layoutY="22.0" style="-fx-background-color: rgba(133,115,217,0.45);" visible="false">
             <children>
                 <Label fx:id="lblName" layoutX="95.0" prefHeight="41.0" prefWidth="347.0" text="Label" textFill="WHITE">
                     <font>
@@ -32,7 +39,7 @@
                 </ScrollPane>
                 <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="466.0" layoutY="371.0" onMouseClicked="#imageOnAction" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../assets/icons8-camera-90.png" />
+                        <Image url="@../view/assets/icons8-camera-90.png" />
                     </image>
                 </ImageView>
                 <!--            <ImageView fitHeight="41.0" fitWidth="51.0" layoutX="42.0" layoutY="362.0" onMouseClicked="#emojiSend" pickOnBounds="true" preserveRatio="true">-->
@@ -47,22 +54,22 @@
                 </ScrollPane>
                 <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="52.0" layoutY="365.0" onMouseClicked="#emojiSend" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/planet%20(1).png" />
+                        <Image url="@../view/assets/planet (1).png" />
                     </image></ImageView>
                 <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="506.0" layoutY="362.0" onMouseClicked="#sendOnAction" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../assets/icons8-send-90.png" />
+                        <Image url="@../view/assets/icons8-send-90.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="41.0" fitWidth="72.0" layoutX="39.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../assets/icons8-user-100.png" />
+                        <Image url="@../view/assets/icons8-user-100.png" />
                     </image></ImageView>
             </children>
         </AnchorPane>
         <AnchorPane fx:id="logPane" layoutX="152.0" layoutY="223.0" prefHeight="150.0" prefWidth="376.0">
             <children>
-                <TextField fx:id="userTxt" layoutX="9.0" layoutY="62.0" onKeyTyped="#txtValiName" prefHeight="24.0" prefWidth="356.0" style="-fx-background-radius: 10 10 10 10;" />
+                <TextField fx:id="userTxt" layoutX="9.0" layoutY="62.0" onKeyTyped="#txtValiName" prefHeight="24.0" prefWidth="356.0" promptText="User Name" style="-fx-background-radius: 10 10 10 10;" />
                 <JFXButton layoutX="125.0" layoutY="101.0" onAction="#loginOnAction" prefHeight="34.0" prefWidth="124.0" stylesheets="@../css/style.css" text="Join">
                     <font>
                         <Font name="System Bold" size="17.0" />
@@ -76,9 +83,9 @@
         </AnchorPane>
         <AnchorPane fx:id="imgPane" layoutX="289.0" layoutY="122.0" prefHeight="100.0" prefWidth="100.0">
             <children>
-                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="112.0" fitWidth="102.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../assets/bot.png" />
+                        <Image url="@../view/assets/bot.png" />
                     </image></ImageView>
             </children>
         </AnchorPane>
