@@ -16,9 +16,9 @@
     <children>
       <Pane prefHeight="446.0" prefWidth="687.0" styleClass="clientpane" stylesheets="@../css/style.css">
          <children>
-            <Label layoutX="213.0" layoutY="40.0" prefHeight="88.0" prefWidth="247.0" text="Play Tech" textFill="WHITE">
+            <Label layoutX="261.0" layoutY="57.0" prefHeight="43.0" prefWidth="165.0" text="PLAY TECH" textFill="WHITE">
                <font>
-                  <Font name="Arial Bold" size="29.0" />
+                  <Font name="Mongolian Baiti" size="29.0" />
                </font>
             </Label>
          </children></Pane>
