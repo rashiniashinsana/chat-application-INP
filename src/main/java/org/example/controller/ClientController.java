@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
@@ -20,12 +21,10 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.awt.*;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -77,6 +76,10 @@ public class ClientController implements Initializable {
     private DataOutputStream dataOutputStream;
 
     private String filepath;
+    private FileChooser fileChooser;
+    private File filePaths;
+
+     PrintWriter printWriter;
 
     @FXML
     void emojiSend(MouseEvent event) {
@@ -95,8 +98,6 @@ public class ClientController implements Initializable {
 
         dataOutputStream.writeUTF(filepath);
         try {
-
-
             File inputfile = new File(filepath);
             Image image = new Image(inputfile.toURI().toString());
             ImageView imageView = new ImageView(image);
@@ -126,6 +127,11 @@ public class ClientController implements Initializable {
             dataOutputStream.flush();
 
         }
+        /*Stage stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
+        fileChooser=new FileChooser();
+        fileChooser.setTitle("Open Image");
+        this.filePaths=fileChooser.showOpenDialog(stage);
+        printWriter.println(lblName.getText()+"img "+filePaths.getPath());*/
 
     }
 
